@@ -2,7 +2,7 @@
 resource "aws_vpc" "my_vpc" {
   cidr_block           = var.vpc_cidr
   instance_tenancy     = "default"
-  enable_dns_hostnames = true  # Enables DNS for resources (important for EKS or EC2 name resolution
+  enable_dns_hostnames = true  # Enables DNS for resources (important for EKS or EC2 name resolutions
 
   tags = {
     Name = var.vpc_name
